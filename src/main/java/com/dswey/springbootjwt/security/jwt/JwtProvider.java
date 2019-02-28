@@ -19,7 +19,7 @@ public class JwtProvider {
 
     private Key jwtKey = Keys.secretKeyFor(SignatureAlgorithm.HS256);
 
-    @Value("${grokonez.app.jwtExpiration}")
+    @Value("${dswey.app.jwtExpiration}")
     private int jwtExpiration;
 
     public String generateJwtToken(Authentication authentication) {
